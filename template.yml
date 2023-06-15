@@ -48,15 +48,15 @@ Resources:
         - arn:aws:iam::aws:policy/AdministratorAccess
 
 
-  # FullAccessPolicy:
-  #   Type: AWS::IAM::Policy
-  #   Properties:
-  #     PolicyName: FullAccessPolicy
-  #     Roles:
-  #       - !Ref FullAccessRole
-  #     PolicyDocument:
-  #       Version: '2012-10-17'
-        # Statement:
-        #   - Effect: Allow
-        #     Action: '*'
-        #     Resource: '*'
+  FullAccessPolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: FullAccessPolicy
+      Roles:
+        - !Ref FullAccessRole
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Action: '*'
+            Resource: '*'
