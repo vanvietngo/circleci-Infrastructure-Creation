@@ -9,8 +9,9 @@ Resources:
         - !Ref InstanceSecurityGroup
       KeyName: ansible
       ImageId: "ami-022e1a32d3f742bd8" # you may need to find out what instance types are available in your region - use https://cloud-images.ubuntu.com/locator/ec2/
-      InstanceType: t3.micro
+      InstanceType: t2.micro
       IamInstanceProfile: !Ref MyEC2InstanceProfile
+
   InstanceSecurityGroup:
     Type: "AWS::EC2::SecurityGroup"
     Properties:
