@@ -104,7 +104,7 @@ jobs:
 
 workflows:
   # Name the workflow "welcome"
-  my_workflow:
+  workflow_create_EC2:
     # Run the welcome/run job in its own container
     jobs:
       # - welcome/run
